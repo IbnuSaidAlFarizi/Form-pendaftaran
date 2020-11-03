@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form pendaftaran</title>
+</head>
+<body bgcolor="cyan">
+	<h2><center>Formulir Pendaftaran Calon Siswa Baru</center></h2>
+	<H2><center>SMK Rebahan 3</center></H2>
+<div id="container">
+ <form action="" method="post" enctype="multipart/form-data" name="ftbl_calonsiswa" id="ftbl_calonsiswa" >
+  <table width="494">
+    <tr>
+      <td height="17" colspan="2"><span class="style3"><strong>PILIHAN KELAS ATAU JURUSAN </strong></span></td>
+    </tr>
+    <tr>
+      <td width="186" height="23"><div align="right"><span class="style3">Status Pendaftaran: </span></div></td>
+      <td width="296">        
+        <select name="statusdaftar" class="required" title="harus diisi">
+          <option value="">- Pilih Status Daftar -</option>
+          <option value="BARU">Daftar Baru</option>
+          <option value="PINDAHAN">Daftar Pindahan</option>
+        </select>        
+      </td>
+    </tr>
+
+<!-- 	<? 	$statusdaftar1=$_POST[statusdaftar]; ?><input name="stsdaftar" type="text" value="<? echo $statusdaftar1;?>" /> -->
+    <tr>
+      <td height="23"><div align="right"><span class="style3">Jurusan:</span></div></td>
+      <td>        
+        <select name="jurusanid" class="required" title="harus diisi">
+          <option value="">- Pilih Jurusan -</option>
+        
+		 <option value='jurusan'>Tata Boga</option>
+		 <option value="Otomotif">Otomotif</option>
+		 <option value="TKJ">TKJ</option>
+		 <option value="Farmasi">Farmasi</option>
+		 <option value="RPL">RPL</option>
+		 <option value="Elektronik">Elektronik</option>
+        </select>        
+      </td>
+    </tr>
+    <tr>
+      <td height="23"><div align="right" class="style3">
+        <div align="right">Tahun Masuk: </div>
+      </div></td>
+      <td><input name="thnmasuk" type="text" id="thnmasuk" size="10" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="style3"><strong>KETERANGAN TENTANG DIRI CALON SISWA </strong></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">NISN: </div></td>
+      <td><input name="nisn" type="text" id="nisn" size="15" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Nama Lengkap:</div></td>
+      <td><input name="namalengkap" type="text" id="namalengkap" size="40" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Nama Panggilan:</div></td>
+      <td><input name="namapanggilan" type="text" id="namapanggilan" size="40" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Tempat Tanggal Lahir:</div></td>
+      <td class="style3"><input name="tempatlhrsiswa" type="date" id="tempatlhrsiswa" class="required" title="harus diisi" />
+          <input name="tanggallhrsiswa" type="text" id="tanggallhrsiswa" size="10" class="required" title=" "  />
+        dd/MM/yyyy</td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Jenis Kelamin:</div></td>
+      <td class="style3">
+       		<input type="radio" name="jk" value="L" checked />Laki-Laki
+       		<input type="radio" name="jk" value="P" />Perempuan
+      </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Agama:</div></td>
+      <td>
+      	<input type="checkbox" id="vehiclel" name="vehiclel" value="agama">
+ 		<label for="vehiclel">Islam</label>
+  		<input type="checkbox" id="vehiclel" name="vehiclel" value="agama">
+  		<label for="vehiclel">Kristen</label>
+  		<input type="checkbox" id="vehiclel" name="vehiclel" value="agama">
+  		<label for="vehiclel">Hindu</label>
+  		<input type="checkbox" id="vehiclel" name="vehiclel" value="agama">
+  		<label for="vehiclel">Budhha</label>
+  		<input type="checkbox" id="vehiclel" name="vehiclel" value="agama">
+  		<label for="vehiclel">lainnya</label>
+      </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Kewarga Negaran:</div></td>
+      <td class="style3">
+        <select name="kewarganegid" id="kewarganegid" class="required" title="harus diisi">
+          <option value="">- Pilih -</option>
+          <option value="WNI">WNI</option>
+          <option value="WNA">WNA</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Status Diri:</div></td>
+      <td class="style3">
+        <select name="statusdiriid" id="statusdiriid" class="required" title="harus diisi">
+          <option value="">- Pilih -</option>
+          <option value="Lengkap">Lengkap</option>
+          <option value="Yatim">Yatim</option>
+          <option value="Piatu">Piatu</option>
+          <option value="Yatim Piatu">Yatim Piatu</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Anak Ke:</div></td>
+      <td class="style3"><input name="anakke" type="text" id="anakke" size="2" class="required" title="harus diisi" />
+        dari
+        <input name="saudarakandung" type="text" id="saudarakandung" size="2" class="required" title=" " />
+        Bersaudara </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Jumlah Saudara Tiri:</div></td>
+      <td><input name="saudaratiri" type="text" id="saudaratiri" size="2" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Jumlah Saudara Angkat:</div></td>
+      <td><input name="saudaraangkat" type="text" id="saudaraangkat" size="2" /></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2" class="style3"><strong>KETERANGAN TEMPAT TINGGAL CALON SISWA</strong></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Alamat:</div></td>
+      <td class="style3">
+        <textarea name="alamatsiswa" cols="40" id="alamatsiswa" class="required" title="harus diisi"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Kota / Kabupaten: </div></td>
+      <td><input name="kotakabupaten" type="text" id="kotakabupaten" size="40" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Kecamatan: </div></td>
+      <td><input name="kecamatan" type="text" id="kecamatan" size="40" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Kelurahan: </div></td>
+      <td><input name="kelurahan" type="text" id="kelurahan" size="40" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Kode Pos: </div></td>
+      <td><input name="kodepos" type="text" id="kodepos" size="5" class="required" title="harus diisi" /></td>
+    </tr>
+    <tr>
+      <td><div align="right" class="style3">Nomor Telepon: </div></td>
+      <td><input name="notelpon" type="text" id="notelpon" size="15" /></td>
+    </tr>
+    <tr>
+      <td height="26">&nbsp;</td>
+      <td>
+        <input type="submit" name="Simpan" value="Daftar" />
+        <input type="reset" name="Reset" value="Reset" />
+      </td>
+    </tr>
+  </table>
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2020 - Youll Never Walk Alone - <a href="pf.html"> SMK Rebahan 3</a></p>
+    <p class="fl_right">Creat by <a target="_blank" href="https://www.youtube.com/" title="Sekolah Teknik Menengah"> Cyber Coding Jawa</a></p>
+   
+  </div>
+</form>
+</div>
+</body>
+</html>
